@@ -1,7 +1,7 @@
 import "dotenv/config";
 
+import { exercises } from "../routes/exercises/exercises.schema";
 import db from "./index";
-import { exercises } from "./schema";
 
 async function seed() {
   // eslint-disable-next-line no-console

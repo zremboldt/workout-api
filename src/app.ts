@@ -4,7 +4,6 @@ import exercises from "@/routes/exercises/exercises.index";
 import index from "@/routes/index.route";
 import persons from "@/routes/persons/persons.index";
 import sets from "@/routes/sets/sets.index";
-import tasks from "@/routes/tasks/tasks.index";
 
 const app = createApp();
 
@@ -12,7 +11,6 @@ configureOpenAPI(app);
 
 const routes = [
   index,
-  tasks,
   persons,
   exercises,
   sets,

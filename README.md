@@ -1,3 +1,6 @@
+Lucidchart:
+https://lucid.app/lucidchart/3c3db279-f03c-42bb-9ab0-8a8fb1089944/edit?beaconFlowId=C2C69ABC8121A9F4&invitationId=inv_87b84c30-7138-48e5-b37f-a813fa5b5f36&page=0_0#
+
 # Hono Open API Starter
 
 A starter template for building fully documented type-safe JSON APIs with Hono and Open API.

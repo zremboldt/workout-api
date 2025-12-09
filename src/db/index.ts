@@ -1,8 +1,9 @@
 import { drizzle } from "drizzle-orm/libsql";
 
 import env from "@/env";
-
-import * as schema from "./schema";
+import * as exercisesSchema from "@/routes/exercises/exercises.schema";
+import * as personsSchema from "@/routes/persons/persons.schema";
+import * as setsSchema from "@/routes/sets/sets.schema";
 
 const db = drizzle({
   connection: {
@@ -10,7 +11,7 @@ const db = drizzle({
     authToken: env.DATABASE_AUTH_TOKEN,
   },
   casing: "snake_case",
-  schema,
+  schema: { ...personsSchema, ...exercisesSchema, ...setsSchema },
 });
 
 export default db;

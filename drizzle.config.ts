@@ -3,7 +3,7 @@ import { defineConfig } from "drizzle-kit";
 import env from "@/env";
 
 export default defineConfig({
-  schema: "./src/db/schema.ts",
+  schema: "./src/routes/**/*.schema.ts",
   out: "./src/db/migrations",
   dialect: "turso",
   casing: "snake_case",
